@@ -17,7 +17,9 @@ window.Webflow.push(() => {
       document.querySelector('.countdown_min').innerText = minutes < 0 ? '00' : minutes;
       document.querySelector('.countdown_sec').innerText = seconds < 0 ? '00' : seconds;
 
-      document.querySelector('.timing-popup_countdown').style.opacity = 1;
+      setTimeout(() => {
+        document.querySelector('.timing-popup_countdown').style.opacity = 1;
+      }, 500)
 
       // When countdown reaches zero
       if (difference < 0) {
