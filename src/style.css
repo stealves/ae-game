@@ -1,3 +1,6 @@
-html {
-    background-color: red;
-}
+/* Global */
+@import url(./utils/global.css);
+/* Homepage */
+@import url(./utils/home.css);
+/* Booking */
+@import url(./utils/booking.css);

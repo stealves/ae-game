@@ -1,0 +1,153 @@
+html.nav-open,
+html.nav-open body {
+    overflow-y: hidden;
+    height: 100vh;
+    min-height: 0px;
+}
+
+html.nav-open nav {
+    position: sticky;
+    top: 0;
+}
+
+html.nav-open .announcement-bar {
+    max-height: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.hero {
+    perspective: 1000px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    transform-style: initial !important;
+}
+
+.hero__container {
+    isolation: isolate;
+}
+
+.hero__title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+healcode-widget[data-type="account-link"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #56c111;
+}
+
+::selection {
+    color: white;
+    background: #56c111;
+}
+
+.no-action {
+    pointer-events: none;
+}
+
+.instagram,
+.booking__tabs,
+.booking__content,
+.location__info--map,
+.price__item--link__text,
+.price__price {
+    mask-image: none;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.faq__item.open .faq__dropdown--content {
+    opacity: 1;
+    max-height: 3000px;
+}
+
+.faq__item.open .faq__dropdown--toggle {
+    color: #9151c3;
+}
+
+.faq__item.open .faq__dropdown--icon {
+    transform: rotate(45deg);
+}
+
+.instructor__item:nth-child(even) {
+    margin: 0 160px 40px 0;
+    padding: 20px 60px 40px 40px;
+    text-align: right;
+}
+
+.instructor__item:nth-child(even) .instructor__image {
+    top: 0;
+    left: auto;
+    right: 0;
+    transform: translateX(160px);
+}
+
+.instructor__item:nth-child(even) .instructor__name {
+    margin: 0 -60px 20px 0;
+    padding: 5px 60px 10px 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .instructor__item:nth-child(even) {
+        margin: 0 20vw 40px 0;
+        padding: 3vw 8vw 5vw 5vw;
+    }
+
+    .instructor__item:nth-child(even) .instructor__image {
+        transform: translateX(20vw);
+    }
+
+    .instructor__item:nth-child(even) .instructor__name {
+        margin: 0 -8vw 3vw 0;
+        padding: 5px 8vw 10px 4vw;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .instructor__item:nth-child(even) {
+        margin: 0 0 20px 0;
+        padding: 20px;
+    }
+
+    .instructor__item:nth-child(even) .instructor__image {
+        margin: -20px -20px 0 auto;
+        transform: none;
+    }
+
+    .instructor__item:nth-child(even) .instructor__name {
+        margin: -20px -20px 20px 0;
+        padding: 20px 20px 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .prices__list.splide__list {
+        display: -ms-grid !important;
+        display: grid !important;
+    }
+}
+
+.price__item--link__text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Show countdown */
+.timing-popup_float-button.is-visible,
+.timing-popup_countdown-bar.is-visible {
+    opacity: 1;
+    transform: translateY(0%);
+}
